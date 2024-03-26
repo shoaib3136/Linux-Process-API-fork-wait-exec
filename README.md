@@ -106,7 +106,9 @@ exit(0);}
 
 
 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/shoaib3136/Linux-Process-API-fork-wait-exec/assets/117919362/5bdb59c0-81ce-4ce6-8117-9f25bcd57241)
+
 
 
 
@@ -116,6 +118,19 @@ exit(0);}
 
 
 ## C Program to execute Linux system commands using Linux API system calls exec() family
+```
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	printf("Running ps with execlp\n");
+	execlp("ps", "ps", "ax", NULL);
+	printf("Done.\n");
+	exit(0);
+}
+
+```
 
 
 
@@ -141,8 +156,9 @@ exit(0);}
 
 
 
+## OUTPUT
+![image](https://github.com/shoaib3136/Linux-Process-API-fork-wait-exec/assets/117919362/7c8740eb-ea50-477f-8aab-5db463399d0d)
 
-##OUTPUT
 
 
 
